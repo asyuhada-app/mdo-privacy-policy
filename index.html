@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi / Privacy Policy - Manajemen Driver Online (MDO)</title>
+  <meta name="description" content="Kebijakan Privasi resmi aplikasi Manajemen Driver Online (MDO) terkait pengumpulan, penggunaan, dan perlindungan data pengguna, termasuk lokasi latar belakang dan OCR.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1976D2;
+      --primary-dark: #0D47A1;
+      --primary-light: #E3F2FD;
+      --accent: #0288D1;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --bg-body: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --border-color: #E2E8F0;
+      --success: #16A34A;
+      --warning: #EA580C;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --radius-md: 12px;
+      --radius-lg: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%);
+      color: white;
+      padding: 3rem 1.5rem 2.5rem;
+      position: relative;
+      box-shadow: var(--shadow-md);
+    }
+
+    .header-container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .app-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .app-brand-badge {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .lang-switcher {
+      display: flex;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 9999px;
+      padding: 3px;
+      gap: 2px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.825rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: white;
+      color: var(--primary-dark);
+      box-shadow: var(--shadow-sm);
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 720px;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin-top: 0.5rem;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    main {
+      max-width: 960px;
+      margin: -1.5rem auto 3rem;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 2rem;
+      position: relative;
+    }
+
+    @media (max-width: 860px) {
+      main {
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+      }
+      .toc-wrapper {
+        display: none;
+      }
+    }
+
+    .toc-wrapper {
+      position: sticky;
+      top: 1.5rem;
+      align-self: start;
+    }
+
+    .toc-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .toc-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    .toc-list a {
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color 0.15s;
+      display: block;
+      padding: 0.2rem 0;
+    }
+
+    .toc-list a:hover {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .content-area {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .notice-box {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 1rem 1.25rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-bottom: 2rem;
+      font-size: 0.925rem;
+      color: var(--primary-dark);
+    }
+
+    .notice-box strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+    }
+
+    .warning-box {
+      background: #FFF7ED;
+      border-left: 4px solid var(--warning);
+      padding: 1rem 1.25rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 1.5rem 0;
+      font-size: 0.925rem;
+      color: #9A3412;
+    }
+
+    section {
+      margin-bottom: 2.25rem;
+      scroll-margin-top: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1rem 0 0.4rem;
+      color: var(--text-main);
+    }
+
+    p {
+      margin-bottom: 0.85rem;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1rem 1.5rem;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 1rem 0;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.875rem;
+    }
+
+    th {
+      background: #F1F5F9;
+      color: var(--text-main);
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      color: #334155;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: #E2E8F0;
+      color: #475569;
+    }
+
+    .badge-primary {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    .badge-alert {
+      background: #FEE2E2;
+      color: #991B1B;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      background: white;
+      padding: 2.5rem 1.5rem;
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .lang-section {
+      display: block;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="nav-bar">
+        <div class="app-brand">
+          <span>🚗 Manajemen Driver Online</span>
+          <span class="app-brand-badge">MDO</span>
+        </div>
+        <div class="lang-switcher">
+          <button id="btn-id" class="lang-btn active" onclick="setLanguage('id')">Bahasa Indonesia</button>
+          <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+        </div>
+      </div>
+      <h1 id="header-title">Kebijakan Privasi</h1>
+      <p class="subtitle" id="header-subtitle">
+        Transparansi lengkap terkait perlindungan data pribadi, akses lokasi latar belakang (Background Location), ekstraksi ringkasan trip (OCR), dan hak kendali data pengguna.
+      </p>
+      <div class="meta-bar">
+        <div class="meta-item">
+          <span>📅 Berlaku Efektif:</span>
+          <strong>13 November 2026</strong>
+        </div>
+        <div class="meta-item">
+          <span>📱 Paket Aplikasi:</span>
+          <strong>org.asyuhada.driveronline</strong>
+        </div>
+        <div class="meta-item">
+          <span>🛡️ Pengembang:</span>
+          <strong>Asyuhada Software / domdes</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BODY -->
+  <main>
+    <!-- TOC -->
+    <aside class="toc-wrapper">
+      <div class="toc-card">
+        <div class="toc-title" id="toc-header">Daftar Isi</div>
+        <ul class="toc-list" id="toc-nav">
+          <!-- Populated by JS -->
+        </ul>
+      </div>
+    </aside>
+
+    <!-- CONTENT -->
+    <article class="content-area">
+
+      <!-- ==================== BAHASA INDONESIA CONTENT ==================== -->
+      <div id="content-id" class="lang-section">
+        <div class="notice-box">
+          <strong>Ringkasan Privasi Pengguna</strong>
+          Aplikasi <strong>Manajemen Driver Online (MDO)</strong> dirancang untuk membantu mitra pengemudi daring mengelola keuangan harian, mencatat pendapatan, biaya operasional kendaraan, serta merekam jarak aktual on-bid secara mandiri. Kami menjunjung tinggi privasi Anda: <strong>kami tidak menjual data pribadi atau data lokasi Anda kepada pihak ketiga atau pengiklan mana pun.</strong>
+        </div>
+
+        <section id="id-pendahuluan">
+          <h2>1. Pendahuluan</h2>
+          <p>
+            Kebijakan Privasi ini menjelaskan bagaimana aplikasi <strong>Manajemen Driver Online</strong> ("MDO", "kami", atau "aplikasi kami") mengumpulkan, menggunakan, menyimpan, dan melindungi informasi Anda saat menggunakan aplikasi seluler kami.
+          </p>
+          <p>
+            Dengan mengunduh, memasang, atau menggunakan aplikasi MDO, Anda menyatakan bahwa Anda telah membaca, memahami, dan menyetujui praktik yang dijelaskan dalam Kebijakan Privasi ini. Jika Anda tidak menyetujui kebijakan ini, Anda disarankan untuk tidak menggunakan aplikasi ini.
+          </p>
+        </section>
+
+        <section id="id-data-dikumpulkan">
+          <h2>2. Data yang Kami Kumpulkan</h2>
+          <p>Kami hanya mengumpulkan data yang benar-benar esensial untuk menjalankan fungsi produktivitas aplikasi:</p>
+          <ul>
+            <li>
+              <strong>Informasi Akun & Autentikasi:</strong> Alamat email, nama akun, dan identitas profil publik saat Anda masuk menggunakan <em>Google Sign-In</em> (diotentikasi melalui Supabase Auth).
+            </li>
+            <li>
+              <strong>Data Lokasi & Rute Perjalanan (GPS):</strong> Titik koordinat garis lintang (latitude), garis bujur (longitude), kecepatan kendaraan, dan penanda waktu (timestamp) saat Anda mengaktifkan sesi <em>Pelacak GPS On-Bid</em>.
+            </li>
+            <li>
+              <strong>Gambar Tangkapan Layar (OCR):</strong> Gambar riwayat pesanan (screenshot) yang Anda pilih secara manual untuk diekstrak menjadi teks catatan trip menggunakan teknologi pengenalan teks di perangkat.
+            </li>
+            <li>
+              <strong>Data Operasional Mandiri:</strong> Catatan transaksi trip, nilai tarif kotor/bersih, tip penumpang, potongan platform, biaya operasional harian (BBM, e-toll, servis kendaraan), dan profil kendaraan (nomor pelat & platform, contoh: GoCar / Grab).
+            </li>
+          </ul>
+        </section>
+
+        <section id="id-lokasi-latar-belakang">
+          <h2>3. Penggunaan Lokasi Latar Belakang (Background Location)</h2>
+          <div class="warning-box">
+            <strong>Pemberitahuan Khusus Google Play (Prominent Disclosure):</strong><br>
+            Aplikasi MDO mengumpulkan data lokasi akurat secara berkelanjutan (termasuk saat aplikasi berada di latar belakang atau layar perangkat dimatikan) <strong>HANYA</strong> ketika Anda secara sadar menekan tombol <strong>"Mulai"</strong> pada kartu <em>Pelacak GPS On-Bid</em>.
+          </div>
+          <p>
+            <strong>Tujuan Penggunaan Lokasi Latar Belakang:</strong>
+          </p>
+          <ol>
+            <li>
+              <strong>Perekaman Jarak Aktual (Odometer Digital):</strong> Pengemudi daring sering berpindah ke aplikasi navigasi peta (seperti Google Maps / Waze) atau mematikan layar saat sedang berkendara melayani penumpang. Layanan Latar Belakang (Foreground Service) memastikan penghitungan kilometer harian dan jarak tempuh tetap akurat tanpa terputus.
+            </li>
+            <li>
+              <strong>Pencocokan Trip & Analisis Deadhead Mileage:</strong> Mengetahui jarak aktual antara titik jemput dan pengantaran, serta menghitung jarak tanpa trip (km kosong) untuk efisiensi bahan bakar dan penghitungan biaya operasional riil per kilometer.
+            </li>
+            <li>
+              <strong>Ekspor Berkas GPX / Integrasi Dashcam:</strong> Memfasilitasi ekspor rute perjalanan ke format standar GPX agar pengguna dapat mencocokkan rekaman kamera dasbor (dashcam) dengan log perjalanan mereka.
+            </li>
+          </ol>
+          <p>
+            <strong>Indikator Transparansi:</strong> Ketika perekaman lokasi aktif, notifikasi persisten bertanda <em>"Pelacakan GPS On-Bid Berjalan"</em> akan selalu ditampilkan di bilah status ponsel Anda. Anda dapat menghentikan perekaman lokasi kapan saja cukup dengan menekan tombol <strong>"Stop"</strong>.
+          </p>
+        </section>
+
+        <section id="id-ocr-gambar">
+          <h2>4. Pemrosesan Tangkapan Layar & OCR</h2>
+          <p>
+            Fitur <em>Upload Multi OCR</em> dirancang untuk menghemat waktu pengemudi dalam mencatat trip tanpa perlu mengetik manual satu demi satu:
+          </p>
+          <ul>
+            <li>
+              Proses pembacaan teks dilakukan secara lokal menggunakan <strong>Google ML Kit Text Recognition</strong> di perangkat Anda.
+            </li>
+            <li>
+              Gambar tangkapan layar tidak digunakan untuk tujuan pengenalan wajah, identifikasi biometrik, maupun profiling perilaku.
+            </li>
+            <li>
+              Setelah teks berhasil diekstrak dan disimpan ke dalam database trip lokal, berkas gambar sementara dapat dibersihkan secara otomatis.
+            </li>
+          </ul>
+        </section>
+
+        <section id="id-penyimpanan-keamanan">
+          <h2>5. Penyimpanan, Keamanan & Retensi Data</h2>
+          <p>
+            Keamanan data Anda adalah prioritas utama kami:
+          </p>
+          <ul>
+            <li>
+              <strong>Penyimpanan Lokal:</strong> Basis data aplikasi (Room / SQLite) tersimpan di ruang penyimpanan internal aplikasi yang terisolasi oleh sistem keamanan Android (Sandbox).
+            </li>
+            <li>
+              <strong>Opsi Penyimpanan Lokal Saja:</strong> Kami menyediakan opsi di menu Profil: <em>"Simpan titik GPS mentah di lokal saja"</em> untuk memastikan titik lintasan terperinci Anda tidak pernah keluar dari memori ponsel Anda.
+            </li>
+            <li>
+              <strong>Enkripsi Transit:</strong> Setiap sinkronisasi awan opsional (Supabase) dilindungi oleh protokol enkripsi standar industri Transport Layer Security (TLS 1.3 / HTTPS).
+            </li>
+            <li>
+              <strong>Fitur Retensi Otomatis:</strong> Pengguna dapat mengatur batas waktu penyimpanan titik GPS (misalnya 7 hari, 14 hari, 30 hari) atau memilih <em>"Auto-hapus saat mulai On-Bid"</em> untuk membersihkan jejak rute lama secara otomatis.
+            </li>
+          </ul>
+        </section>
+
+        <section id="id-izin-aplikasi">
+          <h2>6. Rincian Izin Aplikasi (Permissions)</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Izin Sistem</th>
+                  <th>Kategori</th>
+                  <th>Tujuan Penggunaan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>ACCESS_FINE_LOCATION</code><br><code>ACCESS_COARSE_LOCATION</code></td>
+                  <td><span class="badge badge-alert">Sensitif</span></td>
+                  <td>Mengukur jarak tempuh kilometer aktual kendaraan dengan akurasi GPS tinggi saat On-Bid aktif.</td>
+                </tr>
+                <tr>
+                  <td><code>ACCESS_BACKGROUND_LOCATION</code></td>
+                  <td><span class="badge badge-alert">Sensitif</span></td>
+                  <td>Menjaga kontinuitas pencatatan jarak saat pengemudi membuka aplikasi peta navigasi atau layar mati.</td>
+                </tr>
+                <tr>
+                  <td><code>FOREGROUND_SERVICE_LOCATION</code></td>
+                  <td><span class="badge badge-primary">Sistem</span></td>
+                  <td>Menjalankan layanan pelacakan lokasi latar depan dengan notifikasi aktif di bilah status Android.</td>
+                </tr>
+                <tr>
+                  <td><code>POST_NOTIFICATIONS</code></td>
+                  <td><span class="badge badge-primary">Sistem</span></td>
+                  <td>Menampilkan status aktif pelacak On-Bid dan ringkasan jarak yang sedang berjalan.</td>
+                </tr>
+                <tr>
+                  <td><code>READ_MEDIA_IMAGES</code></td>
+                  <td><span class="badge">Media</span></td>
+                  <td>Memilih gambar screenshot ringkasan harian untuk diekstrak teksnya melalui fitur OCR.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="id-hak-pengguna">
+          <h2>7. Hak Pengguna & Penghapusan Data (Data Deletion)</h2>
+          <p>
+            Sesuai dengan ketentuan perlindungan data dan kebijakan Google Play:
+          </p>
+          <ul>
+            <li>
+              <strong>Pembersihan Data Mandiri:</strong> Anda dapat menghapus seluruh riwayat log lokasi GPS kapan saja melalui menu <em>Profil &rarr; Opsi Retensi GPS &rarr; Hapus Semua</em>.
+            </li>
+            <li>
+              <strong>Penghapusan Akun & Data Permanen:</strong> Jika Anda ingin menghapus seluruh akun Anda beserta data yang tersinkronisasi di server awan kami secara permanen, Anda dapat mengajukan permintaan penghapusan dengan mengirimkan email ke <a href="mailto:ken.narottama@gmail.com">ken.narottama@gmail.com</a> dengan subjek <em>"Permohonan Penghapusan Akun MDO"</em>. Kami akan memproses penghapusan seluruh data akun dalam waktu maksimal 7 (tujuh) hari kerja.
+            </li>
+          </ul>
+        </section>
+
+        <section id="id-anak">
+          <h2>8. Privasi Anak-Anak</h2>
+          <p>
+            Aplikasi Manajemen Driver Online ditujukan khusus untuk pengemudi profesional dan individu yang telah memiliki izin mengemudi sah (usia 18 tahun ke atas). Kami tidak dengan sengaja mengumpulkan data dari anak-anak di bawah usia 13 tahun.
+          </p>
+        </section>
+
+        <section id="id-perubahan">
+          <h2>9. Pembaruan Kebijakan Privasi</h2>
+          <p>
+            Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk menyesuaikan dengan pembaruan fitur aplikasi atau kepatuhan regulasi hukum. Setiap perubahan material akan diberitahukan melalui pembaruan aplikasi atau melalui halaman kebijakan privasi ini dengan tanggal pembaruan yang diperbarui.
+          </p>
+        </section>
+
+        <section id="id-kontak">
+          <h2>10. Kontak Pengembang</h2>
+          <p>
+            Apabila Anda memiliki pertanyaan, saran, atau kekhawatiran terkait kebijakan privasi dan keamanan data pada aplikasi Manajemen Driver Online, silakan hubungi kami:
+          </p>
+          <ul>
+            <li><strong>Pengembang:</strong> Asyuhada Software / domdes</li>
+            <li><strong>Email:</strong> <a href="mailto:ken.narottama@gmail.com">ken.narottama@gmail.com</a></li>
+            <li><strong>Repositori Kode:</strong> <a href="https://github.com/domdes/ManajemenDriverOnline" target="_blank" rel="noopener">github.com/domdes/ManajemenDriverOnline</a></li>
+            <li><strong>Lokasi:</strong> Jakarta, Indonesia</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- ==================== ENGLISH CONTENT ==================== -->
+      <div id="content-en" class="lang-section hidden">
+        <div class="notice-box">
+          <strong>User Privacy Summary</strong>
+          The <strong>Manajemen Driver Online (MDO)</strong> application is built to help rideshare and online delivery drivers track their daily earnings, vehicle operational costs, and actual on-bid driving distances independently. We value your privacy: <strong>we do not sell your personal or location data to third parties, data brokers, or advertisers.</strong>
+        </div>
+
+        <section id="en-intro">
+          <h2>1. Introduction</h2>
+          <p>
+            This Privacy Policy describes how <strong>Manajemen Driver Online</strong> ("MDO", "we", "our", or "us") collects, uses, stores, and protects your information when you use our Android mobile application.
+          </p>
+          <p>
+            By downloading, installing, or using MDO, you signify that you have read, understood, and agreed to the practices described in this policy. If you do not agree with any part of this policy, please refrain from using the application.
+          </p>
+        </section>
+
+        <section id="en-data-collected">
+          <h2>2. Data We Collect</h2>
+          <p>We only collect data strictly necessary to provide the productivity and tracking features of the app:</p>
+          <ul>
+            <li>
+              <strong>Account & Authentication Info:</strong> Email address, display name, and public profile picture when you sign in via <em>Google Sign-In</em> (powered securely by Supabase Auth).
+            </li>
+            <li>
+              <strong>Location & Travel Routes (GPS):</strong> Precise latitude, longitude coordinates, speed, and timestamps recorded only when you activate the <em>On-Bid GPS Tracker</em> session.
+            </li>
+            <li>
+              <strong>Screenshots (OCR Processing):</strong> Daily order summary screenshots that you manually select from your gallery to extract trip logs automatically using on-device optical character recognition.
+            </li>
+            <li>
+              <strong>Driver Operational Records:</strong> Trip logs, gross/net fares, customer tips, platform commissions, daily operational expenses (fuel, tolls, maintenance), and driver profile settings (license plate & vehicle platform).
+            </li>
+          </ul>
+        </section>
+
+        <section id="en-background-location">
+          <h2>3. Background Location Usage & Disclosure</h2>
+          <div class="warning-box">
+            <strong>Google Play Prominent Disclosure:</strong><br>
+            MDO collects precise location data continuously—including when the app is closed, running in the background, or when the screen is turned off—<strong>ONLY</strong> while an active <em>On-Bid GPS Tracking</em> session is explicitly started by pressing the <strong>"Mulai" (Start)</strong> button.
+          </div>
+          <p>
+            <strong>Why Background Location is Required:</strong>
+          </p>
+          <ol>
+            <li>
+              <strong>Accurate Distance Recording (Digital Odometer):</strong> Drivers frequently switch to turn-by-turn navigation apps (such as Google Maps or Waze) or turn off their screens during passenger trips. Running as an Android Foreground Service ensures driving distances are continuously and reliably calculated without truncation.
+            </li>
+            <li>
+              <strong>Deadhead Mileage & Trip Matching:</strong> Helps drivers distinguish passenger-carrying miles from unpaid travel (deadhead miles) to assess true operating costs per kilometer.
+            </li>
+            <li>
+              <strong>GPX Export & Dashcam Integration:</strong> Enables drivers to export travel routes as standard GPX files to sync with dashcam footage.
+            </li>
+          </ol>
+          <p>
+            <strong>User Control:</strong> An ongoing persistent notification stating <em>"Pelacakan GPS On-Bid Berjalan"</em> is always displayed in your system status bar while tracking is active. You can stop location tracking at any moment by tapping <strong>"Stop"</strong>.
+          </p>
+        </section>
+
+        <section id="en-ocr-processing">
+          <h2>4. Screenshot Extraction & OCR Processing</h2>
+          <p>
+            The <em>Upload Multi OCR</em> feature speeds up daily trip entry:
+          </p>
+          <ul>
+            <li>Text extraction is processed locally on your device via <strong>Google ML Kit Text Recognition</strong>.</li>
+            <li>Screenshots are not used for facial recognition, biometrics, or behavioral ad profiling.</li>
+            <li>Temporary image caches can be discarded immediately once text has been converted into trip logs.</li>
+          </ul>
+        </section>
+
+        <section id="en-security-retention">
+          <h2>5. Storage, Security & Data Retention</h2>
+          <ul>
+            <li>
+              <strong>Local Sandboxed Storage:</strong> All trip and vehicle databases (Room / SQLite) are saved in the app's private sandbox storage on your device.
+            </li>
+            <li>
+              <strong>Local-Only GPS Mode:</strong> A dedicated toggle in the Profile settings allows you to <em>"Store raw GPS points locally only"</em>, preventing GPS coordinates from uploading to cloud servers.
+            </li>
+            <li>
+              <strong>Transit Encryption:</strong> Optional cloud synchronization is encrypted via modern Transport Layer Security (TLS 1.3 / HTTPS).
+            </li>
+            <li>
+              <strong>Retention Controls:</strong> Built-in controls allow you to auto-purge GPS history older than 7, 14, or 30 days, or clean up all GPS records on demand.
+            </li>
+          </ul>
+        </section>
+
+        <section id="en-permissions">
+          <h2>6. App Permissions Breakdown</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Permission</th>
+                  <th>Classification</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>ACCESS_FINE_LOCATION</code><br><code>ACCESS_COARSE_LOCATION</code></td>
+                  <td><span class="badge badge-alert">Sensitive</span></td>
+                  <td>Measures precise travel distances and calculates vehicle operational efficiency while On-Bid.</td>
+                </tr>
+                <tr>
+                  <td><code>ACCESS_BACKGROUND_LOCATION</code></td>
+                  <td><span class="badge badge-alert">Sensitive</span></td>
+                  <td>Maintains continuous distance calculation when the driver navigates via Google Maps or when screen is locked.</td>
+                </tr>
+                <tr>
+                  <td><code>FOREGROUND_SERVICE_LOCATION</code></td>
+                  <td><span class="badge badge-primary">System</span></td>
+                  <td>Executes foreground location tracking with an ongoing notification visible to the user.</td>
+                </tr>
+                <tr>
+                  <td><code>POST_NOTIFICATIONS</code></td>
+                  <td><span class="badge badge-primary">System</span></td>
+                  <td>Displays active On-Bid tracking status and live kilometer tally in the notification shade.</td>
+                </tr>
+                <tr>
+                  <td><code>READ_MEDIA_IMAGES</code></td>
+                  <td><span class="badge">Media</span></td>
+                  <td>Enables selecting trip screenshots from the device gallery for automated OCR extraction.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="en-user-rights">
+          <h2>7. User Rights & Data Deletion</h2>
+          <p>
+            In compliance with Google Play data safety policies:
+          </p>
+          <ul>
+            <li>
+              <strong>In-App Deletion:</strong> You can purge all stored GPS logs at any time directly in the app under <em>Profile &rarr; GPS Retention &rarr; Hapus Semua (Delete All)</em>.
+            </li>
+            <li>
+              <strong>Complete Account & Data Erasure:</strong> To request permanent deletion of your account and any associated cloud data, please email us at <a href="mailto:ken.narottama@gmail.com">ken.narottama@gmail.com</a> with the subject <em>"MDO Account Deletion Request"</em>. We will permanently delete all requested records within 7 business days.
+            </li>
+          </ul>
+        </section>
+
+        <section id="en-children">
+          <h2>8. Children's Privacy</h2>
+          <p>
+            MDO is intended exclusively for licensed commercial rideshare and delivery drivers aged 18 and older. We do not knowingly collect personal information from children under the age of 13.
+          </p>
+        </section>
+
+        <section id="en-changes">
+          <h2>9. Policy Updates</h2>
+          <p>
+            We may update this Privacy Policy from time to time to reflect product enhancements or regulatory changes. Any updates will be published on this page with an updated effective date.
+          </p>
+        </section>
+
+        <section id="en-contact">
+          <h2>10. Developer Contact</h2>
+          <p>
+            If you have questions or concerns regarding this Privacy Policy or your personal data, please contact:
+          </p>
+          <ul>
+            <li><strong>Developer:</strong> Asyuhada Software / domdes</li>
+            <li><strong>Email:</strong> <a href="mailto:ken.narottama@gmail.com">ken.narottama@gmail.com</a></li>
+            <li><strong>GitHub Repository:</strong> <a href="https://github.com/domdes/ManajemenDriverOnline" target="_blank" rel="noopener">github.com/domdes/ManajemenDriverOnline</a></li>
+            <li><strong>Location:</strong> Jakarta, Indonesia</li>
+          </ul>
+        </section>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#id-pendahuluan" onclick="setLanguage('id')">Kebijakan Privasi (ID)</a>
+      <span>&bull;</span>
+      <a href="#en-intro" onclick="setLanguage('en')">Privacy Policy (EN)</a>
+      <span>&bull;</span>
+      <a href="https://github.com/domdes/ManajemenDriverOnline" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; 2026 Manajemen Driver Online (MDO). All rights reserved.</p>
+  </footer>
+
+  <script>
+    const tocData = {
+      id: [
+        { id: "id-pendahuluan", title: "1. Pendahuluan" },
+        { id: "id-data-dikumpulkan", title: "2. Data yang Dikumpulkan" },
+        { id: "id-lokasi-latar-belakang", title: "3. Lokasi Latar Belakang" },
+        { id: "id-ocr-gambar", title: "4. Ekstraksi OCR & Gambar" },
+        { id: "id-penyimpanan-keamanan", title: "5. Keamanan & Retensi Data" },
+        { id: "id-izin-aplikasi", title: "6. Izin Aplikasi (Permissions)" },
+        { id: "id-hak-pengguna", title: "7. Hak & Penghapusan Data" },
+        { id: "id-anak", title: "8. Privasi Anak-Anak" },
+        { id: "id-perubahan", title: "9. Pembaruan Kebijakan" },
+        { id: "id-kontak", title: "10. Kontak Pengembang" }
+      ],
+      en: [
+        { id: "en-intro", title: "1. Introduction" },
+        { id: "en-data-collected", title: "2. Data We Collect" },
+        { id: "en-background-location", title: "3. Background Location" },
+        { id: "en-ocr-processing", title: "4. OCR & Screenshots" },
+        { id: "en-security-retention", title: "5. Security & Retention" },
+        { id: "en-permissions", title: "6. Permissions Breakdown" },
+        { id: "en-user-rights", title: "7. User Rights & Deletion" },
+        { id: "en-children", title: "8. Children's Privacy" },
+        { id: "en-changes", title: "9. Policy Updates" },
+        { id: "en-contact", title: "10. Developer Contact" }
+      ]
+    };
+
+    function renderToc(lang) {
+      const list = document.getElementById("toc-nav");
+      list.innerHTML = "";
+      tocData[lang].forEach(item => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = "#" + item.id;
+        a.textContent = item.title;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      document.getElementById("toc-header").textContent = lang === "id" ? "Daftar Isi" : "Table of Contents";
+    }
+
+    function setLanguage(lang) {
+      const contentId = document.getElementById("content-id");
+      const contentEn = document.getElementById("content-en");
+      const btnId = document.getElementById("btn-id");
+      const btnEn = document.getElementById("btn-en");
+      const title = document.getElementById("header-title");
+      const subtitle = document.getElementById("header-subtitle");
+
+      if (lang === "en") {
+        contentId.classList.add("hidden");
+        contentEn.classList.remove("hidden");
+        btnId.classList.remove("active");
+        btnEn.classList.add("active");
+        title.textContent = "Privacy Policy";
+        subtitle.textContent = "Comprehensive transparency regarding personal data handling, background location access, trip summary OCR extraction, and your data rights.";
+        document.documentElement.lang = "en";
+      } else {
+        contentId.classList.remove("hidden");
+        contentEn.classList.add("hidden");
+        btnId.classList.add("active");
+        btnEn.classList.remove("active");
+        title.textContent = "Kebijakan Privasi";
+        subtitle.textContent = "Transparansi lengkap terkait perlindungan data pribadi, akses lokasi latar belakang (Background Location), ekstraksi ringkasan trip (OCR), dan hak kendali data pengguna.";
+        document.documentElement.lang = "id";
+      }
+      renderToc(lang);
+    }
+
+    // Initialize
+    renderToc('id');
+  </script>
+</body>
+</html>
+
